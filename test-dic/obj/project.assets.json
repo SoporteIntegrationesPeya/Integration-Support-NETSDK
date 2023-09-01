@@ -1,0 +1,717 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Artifactory/2.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Nuget.Core": "2.14.0"
+        },
+        "compile": {
+          "lib/net45/JFrog.Artifactory.dll": {},
+          "lib/net45/Microsoft.Build.Engine.dll": {},
+          "lib/net45/Microsoft.Build.Framework.dll": {},
+          "lib/net45/Microsoft.Build.Tasks.Core.dll": {},
+          "lib/net45/Microsoft.Build.Utilities.Core.dll": {},
+          "lib/net45/Microsoft.Build.dll": {},
+          "lib/net45/Microsoft.Web.XmlTransform.dll": {},
+          "lib/net45/NuGet.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/JFrog.Artifactory.dll": {},
+          "lib/net45/Microsoft.Build.Engine.dll": {},
+          "lib/net45/Microsoft.Build.Framework.dll": {},
+          "lib/net45/Microsoft.Build.Tasks.Core.dll": {},
+          "lib/net45/Microsoft.Build.Utilities.Core.dll": {},
+          "lib/net45/Microsoft.Build.dll": {},
+          "lib/net45/Microsoft.Web.XmlTransform.dll": {},
+          "lib/net45/NuGet.Core.dll": {}
+        }
+      },
+      "jQuery/2.1.1": {
+        "type": "package"
+      },
+      "Microsoft.Web.Xdt/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NuGet.Core/2.14.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.Xdt": "2.1.0"
+        },
+        "compile": {
+          "lib/net40-Client/NuGet.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/NuGet.Core.dll": {}
+        }
+      },
+      "ReceptionSdk/1.8.2": {
+        "type": "package"
+      },
+      "ReceptionSdk.csproj/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SampleDependency": "1.0.0"
+        }
+      },
+      "SampleDependency/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "2.1.1"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Artifactory/2.3.2": {
+      "sha512": "HBn8+KmRvkXXQJ2nYM7Oq35Il8OBE3gF8hgpqWW92zBiXzRK/2Jb5IuAFMuSYpoRCE4CLH66SV56c5yy8qk03A==",
+      "type": "package",
+      "path": "artifactory/2.3.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "artifactory.2.3.2.nupkg.sha512",
+        "artifactory.nuspec",
+        "lib/net45/JFrog.Artifactory.dll",
+        "lib/net45/Microsoft.Build.Engine.dll",
+        "lib/net45/Microsoft.Build.Framework.dll",
+        "lib/net45/Microsoft.Build.Tasks.Core.dll",
+        "lib/net45/Microsoft.Build.Utilities.Core.dll",
+        "lib/net45/Microsoft.Build.dll",
+        "lib/net45/Microsoft.Web.XmlTransform.dll",
+        "lib/net45/NuGet.Core.dll",
+        "tools/Install.ps1"
+      ]
+    },
+    "jQuery/2.1.1": {
+      "sha512": "/cy0NGAGBx0W6XLqrnehQAKeJhfnZLDdPnBvlNLq/k4mraD1a7rbHBYzV5PYBaz9t5wh+VrGhPUbPztvnFAOrQ==",
+      "type": "package",
+      "path": "jquery/2.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-2.1.1-vsdoc.js",
+        "Content/Scripts/jquery-2.1.1.js",
+        "Content/Scripts/jquery-2.1.1.min.js",
+        "Content/Scripts/jquery-2.1.1.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-2.1.1.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.2.1.1.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
+    "Microsoft.Web.Xdt/2.1.0": {
+      "sha512": "/ieJ02r4MEJM21Eyl+c5kwoJWPhy+qEEcN68JaqDoamabgxJI1jGi/kNLuKvHUCl6tU7E0rMvaR6FmEnDWtS4A==",
+      "type": "package",
+      "path": "microsoft.web.xdt/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Microsoft.Web.XmlTransform.dll",
+        "microsoft.web.xdt.2.1.0.nupkg.sha512",
+        "microsoft.web.xdt.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "NuGet.Core/2.14.0": {
+      "sha512": "UDXFLVRDepqVqyYxQuxujfaAc7XePdw+Lsey+q36iqTm0nuSU1n9laIGqjokvBl0unifYtjSai7fqBQKKd9BUg==",
+      "type": "package",
+      "path": "nuget.core/2.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40-Client/NuGet.Core.dll",
+        "nuget.core.2.14.0.nupkg.sha512",
+        "nuget.core.nuspec"
+      ]
+    },
+    "ReceptionSdk/1.8.2": {
+      "sha512": "mPCxkdSLnQDf2qjUk84b1ceI0BUxPDn2DDkwUZj50CpYoLu+w0KScoRkLCr1xpRo9HMjagnUzlTR5mg99MtaEw==",
+      "type": "package",
+      "path": "receptionsdk/1.8.2",
+      "files": [
+        ".nupkg.metadata",
+        "ApiClient.cs",
+        "Clients/DeliveryTimesClient.cs",
+        "Clients/EventsClient.cs",
+        "Clients/Map.cs",
+        "Clients/MenusClient.cs",
+        "Clients/MessagesClient.cs",
+        "Clients/OptionGroupClient.cs",
+        "Clients/OptionsClient.cs",
+        "Clients/OrdersClient.cs",
+        "Clients/ProductsClient.cs",
+        "Clients/PromotionClient.cs",
+        "Clients/RejectMessagesClient.cs",
+        "Clients/RestaurantsClient.cs",
+        "Clients/SectionsClient.cs",
+        "Doxyfile",
+        "Enums/OperationType.cs",
+        "Enums/OrderProductModificationType.cs",
+        "Exceptions/ApiException.cs",
+        "Exceptions/ConnectionException.cs",
+        "Exceptions/ErrorCode.cs",
+        "Helpers/ApiDeserializer.cs",
+        "Helpers/DateUtil.cs",
+        "Helpers/Ensure.cs",
+        "Helpers/JsonDeserializer.cs",
+        "Http/ApiConnection.cs",
+        "Http/ApiCredentials.cs",
+        "Http/Connection.cs",
+        "Http/Credentials.cs",
+        "Http/Environments.cs",
+        "Http/Request.cs",
+        "Http/Response.cs",
+        "Models/Address.cs",
+        "Models/Attachment.cs",
+        "Models/BeforePrice.cs",
+        "Models/Card.cs",
+        "Models/Company.cs",
+        "Models/DeliveryTime.cs",
+        "Models/DeliveryTimesResponse.cs",
+        "Models/Detail.cs",
+        "Models/Discount.cs",
+        "Models/DiscountCode.cs",
+        "Models/DiscountType.cs",
+        "Models/Driver.cs",
+        "Models/Entity.cs",
+        "Models/ExpositionDates.cs",
+        "Models/GenericResponse.cs",
+        "Models/Item.cs",
+        "Models/Location.cs",
+        "Models/Message.cs",
+        "Models/Option.cs",
+        "Models/OptionGroup.cs",
+        "Models/Order.cs",
+        "Models/OrderOption.cs",
+        "Models/OrderOptionGroup.cs",
+        "Models/OrderState.cs",
+        "Models/OrderTracking.cs",
+        "Models/OrdersResponse.cs",
+        "Models/Payment.cs",
+        "Models/Portal.cs",
+        "Models/Product.cs",
+        "Models/Promotion.cs",
+        "Models/Reconciliation.cs",
+        "Models/RejectMessage.cs",
+        "Models/RejectMessagesResponse.cs",
+        "Models/Restaurant.cs",
+        "Models/RestaurantState.cs",
+        "Models/RestaurantsResponse.cs",
+        "Models/Schedule.cs",
+        "Models/Section.cs",
+        "Models/TrackingState.cs",
+        "Models/User.cs",
+        "Models/Vendor.cs",
+        "Net_Doxygen_Configuration",
+        "Properties/AssemblyInfo.cs",
+        "ReceptionSdk.csproj",
+        "Utils/HttpUtils.cs",
+        "Utils/PaginationOptions.cs",
+        "Utils/PartnerUtils.cs",
+        "packages.config",
+        "receptionsdk.1.8.2.nupkg.sha512",
+        "receptionsdk.nuspec"
+      ]
+    },
+    "ReceptionSdk.csproj/1.0.0": {
+      "sha512": "NdCU5pwQlnlRHCpZauyhCYIcFvg+us1dL3Z69IWupsnVAOn52J2x1P2ies9VRw3zDMkTP3fyT+Ptak1j2KMdQA==",
+      "type": "package",
+      "path": "receptionsdk.csproj/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".vs/ReceptionSdk/v16/.suo",
+        ".vs/ReceptionSdk/v16/Server/sqlite3/db.lock",
+        ".vs/ReceptionSdk/v16/Server/sqlite3/storage.ide",
+        ".vs/ReceptionSdk/v16/TestStore/0/046-0000.testlog",
+        ".vs/ReceptionSdk/v16/TestStore/0/046-0001.testlog",
+        ".vs/ReceptionSdk/v16/TestStore/0/testlog.manifest",
+        "ReceptionSdk.sln",
+        "ReceptionSdk/ApiClient.cs",
+        "ReceptionSdk/Clients/CatalogueProductsClient.cs",
+        "ReceptionSdk/Clients/CataloguesClient.cs",
+        "ReceptionSdk/Clients/DeliveryTimesClient.cs",
+        "ReceptionSdk/Clients/EventsClient.cs",
+        "ReceptionSdk/Clients/MenusClient.cs",
+        "ReceptionSdk/Clients/MessagesClient.cs",
+        "ReceptionSdk/Clients/OptionsClient.cs",
+        "ReceptionSdk/Clients/OrdersClient.cs",
+        "ReceptionSdk/Clients/ProductsClient.cs",
+        "ReceptionSdk/Clients/RejectMessagesClient.cs",
+        "ReceptionSdk/Clients/RestaurantsClient.cs",
+        "ReceptionSdk/Doxyfile",
+        "ReceptionSdk/Exceptions/ApiException.cs",
+        "ReceptionSdk/Exceptions/ConnectionException.cs",
+        "ReceptionSdk/Exceptions/ErrorCode.cs",
+        "ReceptionSdk/Helpers/ApiDeserializer.cs",
+        "ReceptionSdk/Helpers/DateUtil.cs",
+        "ReceptionSdk/Helpers/Ensure.cs",
+        "ReceptionSdk/Helpers/JsonDeserializer.cs",
+        "ReceptionSdk/Http/ApiConnection.cs",
+        "ReceptionSdk/Http/ApiCredentials.cs",
+        "ReceptionSdk/Http/Connection.cs",
+        "ReceptionSdk/Http/Credentials.cs",
+        "ReceptionSdk/Http/Environments.cs",
+        "ReceptionSdk/Http/Request.cs",
+        "ReceptionSdk/Http/Response.cs",
+        "ReceptionSdk/Models/Address.cs",
+        "ReceptionSdk/Models/Attachment.cs",
+        "ReceptionSdk/Models/Card.cs",
+        "ReceptionSdk/Models/Company.cs",
+        "ReceptionSdk/Models/DeliveryTime.cs",
+        "ReceptionSdk/Models/DeliveryTimesResponse.cs",
+        "ReceptionSdk/Models/Detail.cs",
+        "ReceptionSdk/Models/Discount.cs",
+        "ReceptionSdk/Models/DiscountCode.cs",
+        "ReceptionSdk/Models/DiscountType.cs",
+        "ReceptionSdk/Models/Driver.cs",
+        "ReceptionSdk/Models/Location.cs",
+        "ReceptionSdk/Models/Message.cs",
+        "ReceptionSdk/Models/Option.cs",
+        "ReceptionSdk/Models/OptionGroup.cs",
+        "ReceptionSdk/Models/Order.cs",
+        "ReceptionSdk/Models/OrderState.cs",
+        "ReceptionSdk/Models/OrderTracking.cs",
+        "ReceptionSdk/Models/OrdersResponse.cs",
+        "ReceptionSdk/Models/Payment.cs",
+        "ReceptionSdk/Models/Portal.cs",
+        "ReceptionSdk/Models/Product.cs",
+        "ReceptionSdk/Models/RejectMessage.cs",
+        "ReceptionSdk/Models/RejectMessagesResponse.cs",
+        "ReceptionSdk/Models/Restaurant.cs",
+        "ReceptionSdk/Models/RestaurantState.cs",
+        "ReceptionSdk/Models/RestaurantsResponse.cs",
+        "ReceptionSdk/Models/Section.cs",
+        "ReceptionSdk/Models/TrackingState.cs",
+        "ReceptionSdk/Models/User.cs",
+        "ReceptionSdk/Properties/AssemblyInfo.cs",
+        "ReceptionSdk/ReceptionSdk.csproj",
+        "ReceptionSdk/Utils/PaginationOptions.cs",
+        "ReceptionSdk/bin/Debug/AWSSDK.Core.dll",
+        "ReceptionSdk/bin/Debug/AWSSDK.Core.pdb",
+        "ReceptionSdk/bin/Debug/AWSSDK.SQS.dll",
+        "ReceptionSdk/bin/Debug/AWSSDK.SQS.pdb",
+        "ReceptionSdk/bin/Debug/AsyncBridge.dll",
+        "ReceptionSdk/bin/Debug/BouncyCastle.Crypto.dll",
+        "ReceptionSdk/bin/Debug/BouncyCastle.Crypto.pdb",
+        "ReceptionSdk/bin/Debug/Newtonsoft.Json.dll",
+        "ReceptionSdk/bin/Debug/Pubnub.dll",
+        "ReceptionSdk/bin/Debug/ReceptionSdk.dll",
+        "ReceptionSdk/bin/Debug/ReceptionSdk.pdb",
+        "ReceptionSdk/bin/Debug/RestSharp.dll",
+        "ReceptionSdk/bin/Release/AWSSDK.Core.dll",
+        "ReceptionSdk/bin/Release/AWSSDK.Core.pdb",
+        "ReceptionSdk/bin/Release/AWSSDK.Core.xml",
+        "ReceptionSdk/bin/Release/AWSSDK.SQS.dll",
+        "ReceptionSdk/bin/Release/AWSSDK.SQS.pdb",
+        "ReceptionSdk/bin/Release/AWSSDK.SQS.xml",
+        "ReceptionSdk/bin/Release/AsyncBridge.dll",
+        "ReceptionSdk/bin/Release/BouncyCastle.Crypto.dll",
+        "ReceptionSdk/bin/Release/BouncyCastle.Crypto.pdb",
+        "ReceptionSdk/bin/Release/BouncyCastle.Crypto.xml",
+        "ReceptionSdk/bin/Release/Newtonsoft.Json.dll",
+        "ReceptionSdk/bin/Release/Newtonsoft.Json.xml",
+        "ReceptionSdk/bin/Release/Pubnub.dll",
+        "ReceptionSdk/bin/Release/ReceptionSdk.dll",
+        "ReceptionSdk/bin/Release/ReceptionSdk.pdb",
+        "ReceptionSdk/bin/Release/RestSharp.dll",
+        "ReceptionSdk/bin/Release/RestSharp.xml",
+        "ReceptionSdk/obj/Debug/DesignTimeResolveAssemblyReferences.cache",
+        "ReceptionSdk/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache",
+        "ReceptionSdk/obj/Debug/ReceptionSdk.csproj.CopyComplete",
+        "ReceptionSdk/obj/Debug/ReceptionSdk.csproj.CoreCompileInputs.cache",
+        "ReceptionSdk/obj/Debug/ReceptionSdk.csproj.FileListAbsolute.txt",
+        "ReceptionSdk/obj/Debug/ReceptionSdk.csprojAssemblyReference.cache",
+        "ReceptionSdk/obj/Debug/ReceptionSdk.dll",
+        "ReceptionSdk/obj/Debug/ReceptionSdk.pdb",
+        "ReceptionSdk/obj/ReceptionSdk.csproj.nuget.cache",
+        "ReceptionSdk/obj/ReceptionSdk.csproj.nuget.dgspec.json",
+        "ReceptionSdk/obj/ReceptionSdk.csproj.nuget.g.props",
+        "ReceptionSdk/obj/ReceptionSdk.csproj.nuget.g.targets",
+        "ReceptionSdk/obj/Release/ReceptionSdk.csproj.CopyComplete",
+        "ReceptionSdk/obj/Release/ReceptionSdk.csproj.CoreCompileInputs.cache",
+        "ReceptionSdk/obj/Release/ReceptionSdk.csproj.FileListAbsolute.txt",
+        "ReceptionSdk/obj/Release/ReceptionSdk.csprojAssemblyReference.cache",
+        "ReceptionSdk/obj/Release/ReceptionSdk.dll",
+        "ReceptionSdk/obj/Release/ReceptionSdk.pdb",
+        "ReceptionSdk/obj/project.assets.json",
+        "ReceptionSdk/packages.config",
+        "ReceptionSdkTest/ApiConnectionTest.cs",
+        "ReceptionSdkTest/EventApiTest.cs",
+        "ReceptionSdkTest/MessageTest.cs",
+        "ReceptionSdkTest/OptionMenuApiTest.cs",
+        "ReceptionSdkTest/OrderApiTest.cs",
+        "ReceptionSdkTest/ProductCatalogueApiTest.cs",
+        "ReceptionSdkTest/ProductMenuApiTest.cs",
+        "ReceptionSdkTest/Properties/AssemblyInfo.cs",
+        "ReceptionSdkTest/ReceptionSdkTest.csproj",
+        "ReceptionSdkTest/RestaurantApiTest.cs",
+        "ReceptionSdkTest/bin/Debug/AWSSDK.Core.dll",
+        "ReceptionSdkTest/bin/Debug/AWSSDK.Core.pdb",
+        "ReceptionSdkTest/bin/Debug/AWSSDK.Core.xml",
+        "ReceptionSdkTest/bin/Debug/AWSSDK.SQS.dll",
+        "ReceptionSdkTest/bin/Debug/AWSSDK.SQS.pdb",
+        "ReceptionSdkTest/bin/Debug/AWSSDK.SQS.xml",
+        "ReceptionSdkTest/bin/Debug/BouncyCastle.Crypto.dll",
+        "ReceptionSdkTest/bin/Debug/BouncyCastle.Crypto.pdb",
+        "ReceptionSdkTest/bin/Debug/BouncyCastle.Crypto.xml",
+        "ReceptionSdkTest/bin/Debug/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll",
+        "ReceptionSdkTest/bin/Debug/Newtonsoft.Json.dll",
+        "ReceptionSdkTest/bin/Debug/Newtonsoft.Json.xml",
+        "ReceptionSdkTest/bin/Debug/Pubnub.dll",
+        "ReceptionSdkTest/bin/Debug/ReceptionSdk.dll",
+        "ReceptionSdkTest/bin/Debug/ReceptionSdk.pdb",
+        "ReceptionSdkTest/bin/Debug/ReceptionSdkTest.dll",
+        "ReceptionSdkTest/bin/Debug/ReceptionSdkTest.pdb",
+        "ReceptionSdkTest/bin/Debug/RestSharp.dll",
+        "ReceptionSdkTest/bin/Debug/RestSharp.xml",
+        "ReceptionSdkTest/bin/Debug/es/Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll",
+        "ReceptionSdkTest/bin/Release/AWSSDK.Core.dll",
+        "ReceptionSdkTest/bin/Release/AWSSDK.Core.pdb",
+        "ReceptionSdkTest/bin/Release/AWSSDK.Core.xml",
+        "ReceptionSdkTest/bin/Release/AWSSDK.SQS.dll",
+        "ReceptionSdkTest/bin/Release/AWSSDK.SQS.pdb",
+        "ReceptionSdkTest/bin/Release/AWSSDK.SQS.xml",
+        "ReceptionSdkTest/bin/Release/BouncyCastle.Crypto.dll",
+        "ReceptionSdkTest/bin/Release/BouncyCastle.Crypto.pdb",
+        "ReceptionSdkTest/bin/Release/BouncyCastle.Crypto.xml",
+        "ReceptionSdkTest/bin/Release/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll",
+        "ReceptionSdkTest/bin/Release/Newtonsoft.Json.dll",
+        "ReceptionSdkTest/bin/Release/Newtonsoft.Json.xml",
+        "ReceptionSdkTest/bin/Release/Pubnub.dll",
+        "ReceptionSdkTest/bin/Release/ReceptionSdk.dll",
+        "ReceptionSdkTest/bin/Release/ReceptionSdk.pdb",
+        "ReceptionSdkTest/bin/Release/ReceptionSdkTest.dll",
+        "ReceptionSdkTest/bin/Release/ReceptionSdkTest.pdb",
+        "ReceptionSdkTest/bin/Release/RestSharp.dll",
+        "ReceptionSdkTest/bin/Release/RestSharp.xml",
+        "ReceptionSdkTest/bin/Release/es/Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll",
+        "ReceptionSdkTest/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache",
+        "ReceptionSdkTest/obj/Debug/ReceptionSdkTest.csproj.CopyComplete",
+        "ReceptionSdkTest/obj/Debug/ReceptionSdkTest.csproj.CoreCompileInputs.cache",
+        "ReceptionSdkTest/obj/Debug/ReceptionSdkTest.csproj.FileListAbsolute.txt",
+        "ReceptionSdkTest/obj/Debug/ReceptionSdkTest.csprojAssemblyReference.cache",
+        "ReceptionSdkTest/obj/Debug/ReceptionSdkTest.dll",
+        "ReceptionSdkTest/obj/Debug/ReceptionSdkTest.pdb",
+        "ReceptionSdkTest/obj/Release/ReceptionSdkTest.csproj.CopyComplete",
+        "ReceptionSdkTest/obj/Release/ReceptionSdkTest.csproj.CoreCompileInputs.cache",
+        "ReceptionSdkTest/obj/Release/ReceptionSdkTest.csproj.FileListAbsolute.txt",
+        "ReceptionSdkTest/obj/Release/ReceptionSdkTest.csprojAssemblyReference.cache",
+        "ReceptionSdkTest/obj/Release/ReceptionSdkTest.dll",
+        "ReceptionSdkTest/obj/Release/ReceptionSdkTest.pdb",
+        "ReceptionSdkTest/packages.config",
+        "ReceptionSdkTest/util/SDKTestUtil.cs",
+        "nuget.exe",
+        "packages/AWSSDK.Core.3.3.103.32/.signature.p7s",
+        "packages/AWSSDK.Core.3.3.103.32/lib/MonoAndroid10/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/MonoAndroid10/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/MonoTouch10/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/MonoTouch10/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/net35/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/net35/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/net35/AWSSDK.Core.xml",
+        "packages/AWSSDK.Core.3.3.103.32/lib/net45/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/net45/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/net45/AWSSDK.Core.xml",
+        "packages/AWSSDK.Core.3.3.103.32/lib/netstandard1.3/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/netstandard1.3/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/netstandard1.3/AWSSDK.Core.xml",
+        "packages/AWSSDK.Core.3.3.103.32/lib/netstandard2.0/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/netstandard2.0/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/netstandard2.0/AWSSDK.Core.xml",
+        "packages/AWSSDK.Core.3.3.103.32/lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/uap/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/uap/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/uap/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/win8/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/win8/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/win8/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/wp8/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/wp8/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/wp8/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/lib/wpa81/AWSSDK.Core.XML",
+        "packages/AWSSDK.Core.3.3.103.32/lib/wpa81/AWSSDK.Core.dll",
+        "packages/AWSSDK.Core.3.3.103.32/lib/wpa81/AWSSDK.Core.pdb",
+        "packages/AWSSDK.Core.3.3.103.32/tools/account-management.ps1",
+        "packages/AWSSDK.SQS.3.3.0/.signature.p7s",
+        "packages/AWSSDK.SQS.3.3.0/analyzers/dotnet/cs/AWSSDK.SQS.CodeAnalysis.dll",
+        "packages/AWSSDK.SQS.3.3.0/lib/net35/AWSSDK.SQS.XML",
+        "packages/AWSSDK.SQS.3.3.0/lib/net35/AWSSDK.SQS.dll",
+        "packages/AWSSDK.SQS.3.3.0/lib/net35/AWSSDK.SQS.pdb",
+        "packages/AWSSDK.SQS.3.3.0/lib/net45/AWSSDK.SQS.XML",
+        "packages/AWSSDK.SQS.3.3.0/lib/net45/AWSSDK.SQS.dll",
+        "packages/AWSSDK.SQS.3.3.0/lib/net45/AWSSDK.SQS.pdb",
+        "packages/AWSSDK.SQS.3.3.0/lib/netstandard1.3/AWSSDK.SQS.dll",
+        "packages/AWSSDK.SQS.3.3.0/lib/netstandard1.3/AWSSDK.SQS.pdb",
+        "packages/AWSSDK.SQS.3.3.0/lib/netstandard1.3/AWSSDK.SQS.xml",
+        "packages/AWSSDK.SQS.3.3.0/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.SQS.XML",
+        "packages/AWSSDK.SQS.3.3.0/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.SQS.dll",
+        "packages/AWSSDK.SQS.3.3.0/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.SQS.pdb",
+        "packages/AWSSDK.SQS.3.3.0/tools/install.ps1",
+        "packages/AWSSDK.SQS.3.3.0/tools/uninstall.ps1",
+        "packages/AsyncBridge.JetBrains.0.1.1.0/.signature.p7s",
+        "packages/AsyncBridge.JetBrains.0.1.1.0/lib/net40-Client/AsyncBridge.dll",
+        "packages/Newtonsoft.Json.9.0.1/.signature.p7s",
+        "packages/Newtonsoft.Json.9.0.1/lib/net20/Newtonsoft.Json.dll",
+        "packages/Newtonsoft.Json.9.0.1/lib/net20/Newtonsoft.Json.xml",
+        "packages/Newtonsoft.Json.9.0.1/lib/net35/Newtonsoft.Json.dll",
+        "packages/Newtonsoft.Json.9.0.1/lib/net35/Newtonsoft.Json.xml",
+        "packages/Newtonsoft.Json.9.0.1/lib/net40/Newtonsoft.Json.dll",
+        "packages/Newtonsoft.Json.9.0.1/lib/net40/Newtonsoft.Json.xml",
+        "packages/Newtonsoft.Json.9.0.1/lib/net45/Newtonsoft.Json.dll",
+        "packages/Newtonsoft.Json.9.0.1/lib/net45/Newtonsoft.Json.xml",
+        "packages/Newtonsoft.Json.9.0.1/lib/netstandard1.0/Newtonsoft.Json.dll",
+        "packages/Newtonsoft.Json.9.0.1/lib/netstandard1.0/Newtonsoft.Json.xml",
+        "packages/Newtonsoft.Json.9.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "packages/Newtonsoft.Json.9.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "packages/Newtonsoft.Json.9.0.1/tools/install.ps1",
+        "packages/NuGet.CommandLine.5.4.0/.signature.p7s",
+        "packages/NuGet.CommandLine.5.4.0/tools/NuGet.exe",
+        "packages/NuGet.CommandLine.5.4.0/tools/NuGet.pdb",
+        "packages/Portable.BouncyCastle.1.8.1.2/.signature.p7s",
+        "packages/Portable.BouncyCastle.1.8.1.2/Readme.html",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/net4/BouncyCastle.Crypto.dll",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/net4/BouncyCastle.Crypto.pdb",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/net4/BouncyCastle.Crypto.xml",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.0/BouncyCastle.Crypto.deps.json",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.0/BouncyCastle.Crypto.dll",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.0/BouncyCastle.Crypto.pdb",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.0/BouncyCastle.Crypto.xml",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.3/BouncyCastle.Crypto.deps.json",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.3/BouncyCastle.Crypto.dll",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.3/BouncyCastle.Crypto.pdb",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/netstandard1.3/BouncyCastle.Crypto.xml",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/portable-net4+sl5+wp8+win8+wpa81/BouncyCastle.Crypto.dll",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/portable-net4+sl5+wp8+win8+wpa81/BouncyCastle.Crypto.pdb",
+        "packages/Portable.BouncyCastle.1.8.1.2/lib/portable-net4+sl5+wp8+win8+wpa81/BouncyCastle.Crypto.xml",
+        "packages/Pubnub.4.0.33/.signature.p7s",
+        "packages/Pubnub.4.0.33/LICENSE.txt",
+        "packages/Pubnub.4.0.33/lib/net35/Pubnub.dll",
+        "packages/Pubnub.4.0.33/lib/net40/Pubnub.dll",
+        "packages/Pubnub.4.0.33/lib/net45/Pubnub.dll",
+        "packages/Pubnub.4.0.33/lib/net461/Pubnub.dll",
+        "packages/RestSharp.105.2.3/.signature.p7s",
+        "packages/RestSharp.105.2.3/lib/MonoAndroid10/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/MonoAndroid10/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/MonoTouch10/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/MonoTouch10/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/Xamarin.iOS10/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/Xamarin.iOS10/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/net35/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/net35/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/net4-client/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/net4-client/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/net4/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/net4/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/net45/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/net45/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/net451/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/net451/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/net452/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/net452/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/net46/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/net46/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/sl5/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/sl5/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/windowsphone8/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/windowsphone8/RestSharp.xml",
+        "packages/RestSharp.105.2.3/lib/windowsphone81/RestSharp.dll",
+        "packages/RestSharp.105.2.3/lib/windowsphone81/RestSharp.xml",
+        "packages/RestSharp.105.2.3/readme.txt",
+        "receptionsdk.csproj.1.0.0.nupkg.sha512",
+        "receptionsdk.csproj.nuspec"
+      ]
+    },
+    "SampleDependency/1.0.0": {
+      "sha512": "rkrKnTI2KT/L+BaaB6/xZbDiqyQ702TxYp5adqgC/GYU7KBufnNArz/5KNetThpOeXmVEMg0VlFU+9/cKz0L4w==",
+      "type": "package",
+      "path": "sampledependency/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Scripts/nugetexample.js",
+        "sampledependency.1.0.0.nupkg.sha512",
+        "sampledependency.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Artifactory >= 2.3.2",
+      "Newtonsoft.Json >= 13.0.3",
+      "ReceptionSdk >= 1.8.2",
+      "ReceptionSdk.csproj >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\sebastian.montandon\\Documents\\Workspace\\test-dic\\test-dic\\test-dic.csproj",
+      "projectName": "test-dic",
+      "projectPath": "C:\\Users\\sebastian.montandon\\Documents\\Workspace\\test-dic\\test-dic\\test-dic.csproj",
+      "packagesPath": "C:\\Users\\sebastian.montandon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebastian.montandon\\Documents\\Workspace\\test-dic\\test-dic\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\sebastian.montandon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\sebastian.montandon\\Documents\\Workspace\\NET-Test-SDK": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Artifactory": {
+            "target": "Package",
+            "version": "[2.3.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "ReceptionSdk": {
+            "target": "Package",
+            "version": "[1.8.2, )"
+          },
+          "ReceptionSdk.csproj": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Artifactory 2.3.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Artifactory",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.Web.Xdt 2.1.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.Web.Xdt",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"NuGet.Core 2.14.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "NuGet.Core",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}

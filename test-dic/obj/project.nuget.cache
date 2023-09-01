@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "dgSpecHash": "bOuoGAq8GyOWizUaJTBTfhxiJjQx+EDtn9ZumPfCci62UgQv9zfZu+ZhoXOrBQILY/yhrSS2WXS6lI0NtFMoQw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sebastian.montandon\\Documents\\Workspace\\test-dic\\test-dic\\test-dic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\artifactory\\2.3.2\\artifactory.2.3.2.nupkg.sha512",
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\jquery\\2.1.1\\jquery.2.1.1.nupkg.sha512",
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\microsoft.web.xdt\\2.1.0\\microsoft.web.xdt.2.1.0.nupkg.sha512",
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\nuget.core\\2.14.0\\nuget.core.2.14.0.nupkg.sha512",
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\receptionsdk\\1.8.2\\receptionsdk.1.8.2.nupkg.sha512",
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\receptionsdk.csproj\\1.0.0\\receptionsdk.csproj.1.0.0.nupkg.sha512",
+    "C:\\Users\\sebastian.montandon\\.nuget\\packages\\sampledependency\\1.0.0\\sampledependency.1.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Artifactory 2.3.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Artifactory",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.Web.Xdt 2.1.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.Web.Xdt",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"NuGet.Core 2.14.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "NuGet.Core",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}

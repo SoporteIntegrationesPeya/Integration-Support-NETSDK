@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25DD3AE4-7139-4791-893F-C6CE22FC3CE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReceptionSdk</RootNamespace>
+    <AssemblyName>ReceptionSdk</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncBridge, Version=0.1.1.0, Culture=neutral, PublicKeyToken=37dbcba04d38308f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AsyncBridge.JetBrains.0.1.1.0\lib\net40-Client\AsyncBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.3.3.103.32\lib\net35\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SQS, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.SQS.3.3.0\lib\net35\AWSSDK.SQS.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.1.2\lib\net4\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pubnub, Version=4.0.33.0, Culture=neutral, PublicKeyToken=dc66f52ce6619f44, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pubnub.4.0.33\lib\net40\Pubnub.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiClient.cs" />
+    <Compile Include="Clients\Map.cs" />
+    <Compile Include="Clients\MessagesClient.cs" />
+    <Compile Include="Clients\OptionGroupClient.cs" />
+    <Compile Include="Clients\PromotionClient.cs" />
+    <Compile Include="Clients\SectionsClient.cs" />
+    <Compile Include="Clients\OptionsClient.cs" />
+    <Compile Include="Clients\ProductsClient.cs" />
+    <Compile Include="Clients\RejectMessagesClient.cs" />
+    <Compile Include="Clients\DeliveryTimesClient.cs" />
+    <Compile Include="Clients\EventsClient.cs" />
+    <Compile Include="Clients\MenusClient.cs" />
+    <Compile Include="Clients\OrdersClient.cs" />
+    <Compile Include="Clients\RestaurantsClient.cs" />
+    <Compile Include="Enums\OperationType.cs" />
+    <Compile Include="Enums\OrderProductModificationType.cs" />
+    <Compile Include="Exceptions\ConnectionException.cs" />
+    <Compile Include="Helpers\ApiDeserializer.cs" />
+    <Compile Include="Helpers\DateUtil.cs" />
+    <Compile Include="Helpers\Ensure.cs" />
+    <Compile Include="Helpers\JsonDeserializer.cs" />
+    <Compile Include="Models\BeforePrice.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Discount.cs" />
+    <Compile Include="Models\Entity.cs" />
+    <Compile Include="Models\ExpositionDates.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\GenericResponse.cs" />
+    <Compile Include="Models\OrderOption.cs" />
+    <Compile Include="Models\OrderOptionGroup.cs" />
+    <Compile Include="Models\Promotion.cs" />
+    <Compile Include="Models\Reconciliation.cs" />
+    <Compile Include="Models\Schedule.cs" />
+    <Compile Include="Models\Vendor.cs" />
+    <Compile Include="Utils\HttpUtils.cs" />
+    <Compile Include="Utils\PaginationOptions.cs" />
+    <Compile Include="Http\ApiConnection.cs" />
+    <Compile Include="Http\ApiCredentials.cs" />
+    <Compile Include="Http\Environments.cs" />
+    <Compile Include="Http\Connection.cs" />
+    <Compile Include="Http\Credentials.cs" />
+    <Compile Include="Http\Request.cs" />
+    <Compile Include="Http\Response.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Attachment.cs" />
+    <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\DeliveryTime.cs" />
+    <Compile Include="Models\DeliveryTimesResponse.cs" />
+    <Compile Include="Models\Detail.cs" />
+    <Compile Include="Models\DiscountType.cs" />
+    <Compile Include="Models\Driver.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\Option.cs" />
+    <Compile Include="Models\OptionGroup.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrdersResponse.cs" />
+    <Compile Include="Models\OrderState.cs" />
+    <Compile Include="Models\OrderTracking.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\Portal.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\RejectMessage.cs" />
+    <Compile Include="Models\RejectMessagesResponse.cs" />
+    <Compile Include="Models\Restaurant.cs" />
+    <Compile Include="Models\RestaurantsResponse.cs" />
+    <Compile Include="Models\RestaurantState.cs" />
+    <Compile Include="Models\Section.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Exceptions\ApiException.cs" />
+    <Compile Include="Exceptions\ErrorCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\PartnerUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\AWSSDK.SQS.3.3.0\analyzers\dotnet\cs\AWSSDK.SQS.CodeAnalysis.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
